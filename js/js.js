@@ -1,5 +1,6 @@
 $(document).ready(function(){
     console.log( "ready!" );
+	$('#next').click(nextSlide);
 });
 document.addEventListener("wheel", function(e){
 	if (e.deltaY < 0) {
