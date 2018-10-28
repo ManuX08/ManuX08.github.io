@@ -22,7 +22,8 @@ body {
 
 .title {
 	color: #212121;
-	font-size: 48px;
+	/*font-size: 48px;*/
+	font-size: 40vw
 }
 
 .subtitle {
