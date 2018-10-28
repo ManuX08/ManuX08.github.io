@@ -32,8 +32,12 @@ body {
 	line-height:0.1em;
 	margin-left: 20%;
 	margin-right: 20%;
-	margin-top: 8px;
-	margin-bottom: 8px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.span-sub {
+	width: 50%;
 }
 
 .subtitle .span-sub {
