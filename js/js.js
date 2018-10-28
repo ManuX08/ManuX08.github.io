@@ -1,5 +1,8 @@
 $(document).ready(function(){
     console.log( "ready!" );
+	if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+		$('title').css("font-size: 42px;");
+	}
 	$('#next').click(nextSlide);
 });
 document.addEventListener("wheel", function(e){
