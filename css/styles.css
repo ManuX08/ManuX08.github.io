@@ -22,14 +22,12 @@ body {
 
 .title {
 	color: #212121;
-	/*font-size: 48px;*/
-	font-size: 5vw
+	font-size: 48px;
 }
 
 .subtitle {
 	color: #616161;
 	font-size: 15px;
-	font-size: 2vw
 }
 
 .circular-button {
