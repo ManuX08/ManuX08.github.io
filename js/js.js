@@ -1,7 +1,7 @@
 $(document).ready(function(){
     console.log( "ready!" );
 	if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-		$('title').css("font-size: 10px");
+		$('title').css("font-size", "38px");
 	}
 	$('#next').click(nextSlide);
 });
