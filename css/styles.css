@@ -25,6 +25,13 @@ body {
 	font-size: 48px;
 }
 
+@media only screen and (max-width: 1080px) {
+	.title {
+		color: #212121;
+		font-size: 36px;
+	}
+}
+
 .subtitle {
 	color: #616161;
 	font-size: 18px;
