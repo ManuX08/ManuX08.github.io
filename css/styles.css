@@ -52,7 +52,7 @@ body {
 	margin-right: 12px;
 	position: relative;
 	text-align: center;
-	color: #757575;
+	color: #5D6063;
 }
 
 .heading h3 { /*Descrizione*/
@@ -76,21 +76,30 @@ body {
 }
 
 .chapter {
-	padding-top: 36px;
-	padding-bottom: 36px;
 	border-bottom: 1px solid #EAEDF0;
 }
 
 .chapter-wrapper {
+	padding-top: 80px;
+	padding-bottom: 80px;
 	max-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.chapter:first-child .chapter-wrapper {
+	padding-top: 40px;
 }
 
 .chapter-wrapper p {
 	line-height: 1.7em;
 	color: #616161;
 	font-size: 17px;
+	margin:0 0 10px 0;
+}
+
+.chapter-wrapper p:last-child{
+	margin: 0 0 0 0;
 }
 
 /*Styles for subject selection*/
