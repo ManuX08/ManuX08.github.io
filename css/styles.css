@@ -80,8 +80,9 @@ body {
 }
 
 .chapter-wrapper {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	position: relative;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	max-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
@@ -95,11 +96,26 @@ body {
 	line-height: 1.7em;
 	color: #616161;
 	font-size: 17px;
-	margin:0 0 10px 0;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 0;
 }
 
-.chapter-wrapper p:last-child{
-	margin: 0 0 0 0;
+.chapter-wrapper p:last-child {
+	margin-bottom: 0;
+}
+
+.chapter-wrapper .subtitle-container {
+	margin-bottom: 18px;
+}
+
+.chapter-wrapper .subtitle-container h2 {
+	font-size: 28px;
+}
+
+.chapter-wrapper .ruler-after, .chapter-wrapper .ruler-before {
+	top: 16px;
 }
 
 /*Styles for subject selection*/
@@ -161,6 +177,11 @@ body {
 
 .more {
 	text-decoration: none;
+	color: #0070c9;
+}
+
+.more:visited {
+	color: #0070c9;
 }
 
 .more::after {
