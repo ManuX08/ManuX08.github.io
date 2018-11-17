@@ -34,7 +34,7 @@
 	margin: 0;
 	padding: 0;
 	color: #757575;
-	font-family: SanFrancisco-Light;
+	font-family: SanFrancisco-Light-Italic;
 }
 
 .chapter {
@@ -85,7 +85,7 @@
 	margin-bottom: 0;
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 425px) {
 	.header {
 		padding-top: 84px;
 		padding-bottom: 84px;
@@ -99,18 +99,18 @@
 	}
 
 	.heading h1 { /*Titolo*/
-		font-size: 44px;
-		margin-bottom: 8px;
+		font-size: 40px;
+		margin-bottom: 12px;
 	}
 
 	.heading h2 { /*Sottotitolo*/
-		font-size: 19px;
+		font-size: 18px;
 		margin-right: 12px;
 		text-align: left;
 	}
 	
 	.heading .ruler-after {
-		top: 10px;
+		top: 11px;
 	}
 
 	.heading .ruler-before {
@@ -161,7 +161,7 @@
 
 	.heading h1 { /*Titolo*/
 		font-size: 54px;
-		margin-bottom: 12px;
+		margin-bottom: 10px;
 	}
 
 	.heading h2 { /*Sottotitolo*/
@@ -178,7 +178,7 @@
 
 	.heading h3 { /*Descrizione*/
 		font-size: 15px;
-		margin-top: 19px;
+		margin-top: 17px;
 	}
 
 	.chapter-wrapper {

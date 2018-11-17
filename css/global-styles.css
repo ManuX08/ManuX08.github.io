@@ -1,6 +1,7 @@
 @font-face { font-family: SanFrancisco-Light; src: url('fonts/SanFrancisco-Light.ttf');}
 @font-face { font-family: SanFrancisco-Regular; src: url('fonts/SanFrancisco-Regular.ttf');}
 @font-face { font-family: SanFrancisco-Bold; src: url('fonts/SanFrancisco-Regular.ttf');}
+@font-face { font-family: SanFrancisco-Light-Italic; src: url('fonts/SanFrancisco-Light-Italic.ttf');}
 
 body {
 	margin: 0;
