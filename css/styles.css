@@ -10,10 +10,6 @@
 	font-family: SanFrancisco-Light;
 }
 
-.heading .subtitle {
-	display: flex;
-}
-
 .heading h2 { /*Sottotitolo*/
 	font-weight: normal;
 	margin: 0;
@@ -21,12 +17,6 @@
 	position: relative;
 	color: #5D6063;
 	font-family: SanFrancisco-Light;
-}
-
-.heading .ruler-after, .heading .ruler-before {
-	border-top: 1px solid #959BA0;
-	flex: 1;
-	position: relative;
 }
 
 .heading h3 { /*Descrizione*/
@@ -105,16 +95,7 @@
 
 	.heading h2 { /*Sottotitolo*/
 		font-size: 18px;
-		margin-right: 12px;
 		text-align: left;
-	}
-	
-	.heading .ruler-after {
-		top: 11px;
-	}
-
-	.heading .ruler-before {
-		display: none;
 	}
 
 	.heading h3 { /*Descrizione*/
@@ -145,9 +126,32 @@
 	.subheading-title span {
 		padding-right: 12px;
 	}
+	
+	@media only screen and (max-width: 320px) {
+		.heading h1 { /*Titolo*/
+			font-size: 32px;
+		}
+
+		.heading h2 { /*Sottotitolo*/
+			font-size: 17px;
+		}
+	
+		.heading h3 { /*Descrizione*/
+			font-size: 13px;
+			margin-top: 16px;
+		}
+
+		.subheading-title { /*Titolo capitolo*/
+			font-size: 26px;
+		}
+		
+		.subheading-title::after {
+			top: -16px;
+		}
+	}
 }
 
-@media only screen and (min-width: 426px){
+@media only screen and (min-width: 426px) {
 	.header {
 		padding-top: 112px;
 		padding-bottom: 112px;
@@ -170,10 +174,6 @@
 		margin-right: 12px;
 		position: relative;
 		text-align: center;
-	}
-
-	.heading .ruler-after, .heading .ruler-before {
-		top: 13px;
 	}
 
 	.heading h3 { /*Descrizione*/
