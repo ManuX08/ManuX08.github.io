@@ -1,0 +1,42 @@
+@font-face { font-family: SanFrancisco-Light; src: url('fonts/SanFrancisco-Light.ttf');}
+@font-face { font-family: SanFrancisco-Regular; src: url('fonts/SanFrancisco-Regular.ttf');}
+@font-face { font-family: SanFrancisco-Bold; src: url('fonts/SanFrancisco-Regular.ttf');}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: SanFrancisco-Regular;
+	-webkit-font-smoothing: antialiased;
+}
+
+.center-vertical {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+.center-horizontal {
+	text-align: center;
+}
+
+/*Link styles*/
+.more {
+	text-decoration: none;
+	color: #0070c9;
+}
+
+.more:visited {
+	color: #0070c9;
+}
+
+.more::after {
+	content: "\203A";
+	display: inline-block;
+	padding-left: .3em;
+	top: 0;
+}
+
+.more:hover {
+	border-bottom: 1px solid #0070c9;
+}
