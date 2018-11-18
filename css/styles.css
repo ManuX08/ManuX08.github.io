@@ -15,7 +15,7 @@
 	margin: 0;
 	padding: 0;
 	position: relative;
-	color: #5D6063;
+	color: #3c3c3c;
 	font-family: SanFrancisco-Light;
 }
 
@@ -127,7 +127,7 @@
 		padding-right: 12px;
 	}
 	
-	@media only screen and (max-width: 320px) {
+	@media only screen and (max-width: 375px) {
 		.heading h1 { /*Titolo*/
 			font-size: 32px;
 		}
