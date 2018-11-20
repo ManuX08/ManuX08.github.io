@@ -1,0 +1,218 @@
+.bottom-divider {
+	border-bottom: 1px solid #EAEDF0;
+}
+
+.heading h1 { /*Titolo*/
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	font-family: SanFrancisco-Light;
+}
+
+.heading h2 { /*Sottotitolo*/
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	color: #3c3c3c;
+	font-family: SanFrancisco-Light;
+}
+
+.heading h3 { /*Descrizione*/
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	color: #757575;
+	font-family: SanFrancisco-Light-Italic;
+}
+
+.chapter {
+	border-bottom: 1px solid #EAEDF0;
+}
+
+.chapter:last-child {
+	border-bottom: none;
+}
+
+.chapter-wrapper {
+	position: relative;
+}
+
+.subheading {
+	margin-bottom: 18px;
+}
+
+.subheading-title { /*Titolo capitolo*/
+	box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+	font-weight: normal;
+	color: #5D6063;
+	font-family: SanFrancisco-Light;
+}
+
+.subheading-title::after {
+	content: '';
+    border-top: 1px solid #959BA0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: -1;
+}
+
+.subheading-title span {
+	background-color: #ffffff;
+}
+
+.chapter-wrapper p {
+	line-height: 1.8em;
+	color: #616161;
+	font-size: 17px;
+	margin-bottom: 10px;
+	margin-top: 0;
+	font-family: SanFrancisco-Light;
+}
+
+.chapter-wrapper p:last-child {
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 425px) {
+	.header {
+		padding-top: 84px;
+		padding-bottom: 84px;
+	}
+
+	.heading {
+		text-align: left;
+		max-width: 100%;
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+
+	.heading h1 { /*Titolo*/
+		font-size: 40px;
+		margin-bottom: 12px;
+	}
+
+	.heading h2 { /*Sottotitolo*/
+		font-size: 18px;
+		text-align: left;
+	}
+
+	.heading h3 { /*Descrizione*/
+		font-size: 14px;
+		margin-top: 16px;
+	}
+
+	.chapter-wrapper {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 26px;
+		padding-right: 26px;
+		max-width: 100%;
+	}
+
+	.subheading {
+		text-align: left;
+	}
+
+	.subheading-title { /*Titolo capitolo*/
+		font-size: 32px;
+	}
+	
+	.subheading-title::after {
+		top: -20px;
+	}
+	
+	.subheading-title span {
+		padding-right: 12px;
+	}
+	
+	@media only screen and (max-width: 375px) {
+		.heading h1 { /*Titolo*/
+			font-size: 32px;
+		}
+
+		.heading h2 { /*Sottotitolo*/
+			font-size: 17px;
+		}
+	
+		.heading h3 { /*Descrizione*/
+			font-size: 13px;
+			margin-top: 16px;
+		}
+
+		.subheading-title { /*Titolo capitolo*/
+			font-size: 26px;
+		}
+		
+		.subheading-title::after {
+			top: -16px;
+		}
+	}
+}
+
+@media only screen and (min-width: 426px) {
+	.header {
+		padding-top: 112px;
+		padding-bottom: 112px;
+	}
+
+	.heading {
+		text-align: center;
+		max-width: 600px;
+		margin: auto;
+	}
+
+	.heading h1 { /*Titolo*/
+		font-size: 54px;
+		margin-bottom: 10px;
+	}
+
+	.heading h2 { /*Sottotitolo*/
+		font-size: 22px;
+		margin-left: 12px;
+		margin-right: 12px;
+		position: relative;
+		text-align: center;
+	}
+
+	.heading h3 { /*Descrizione*/
+		font-size: 15px;
+		margin-top: 17px;
+	}
+
+	.chapter-wrapper {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.subheading {
+		text-align: center;
+		margin-bottom: 18px;
+	}
+	
+	.subheading-title { /*Titolo capitolo*/
+		font-size: 22px;
+	}
+	
+	.subheading-title::after {
+		top: -13px;
+	}
+	
+	.subheading-title span {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.chapter-wrapper p {
+		margin-left: 24px;
+		margin-right: 24px;
+	}
+}
