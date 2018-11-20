@@ -50,3 +50,16 @@ body {
 	padding-left: .3em;
 	top: 0;
 }
+
+.footer {
+	border-top: 1px solid #EAEDF0;
+	text-align: center;
+}
+
+.footer p {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	color: #616161;
+	font-size: 14px;
+	font-family: SanFrancisco-Light;
+}
