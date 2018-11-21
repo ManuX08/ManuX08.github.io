@@ -5,6 +5,12 @@
 	margin-bottom: -10px;
 }
 
+@media only screen and (max-width: 425px) {
+	#subject-container {
+		margin-top: 22px;
+	}
+}
+
 @media only screen and (max-width: 320px) {
 	#subject-container {
 		margin: 0;
