@@ -34,6 +34,7 @@ body {
 .classic-link {
 	text-decoration: none;
 	color: #0070c9;
+	cursor: pointer;
 }
 
 .classic-link:visited {
