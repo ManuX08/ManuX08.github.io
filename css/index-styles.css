@@ -48,7 +48,7 @@
 	margin: 0;
     padding: 0;
 	font-weight: normal;
-	color: #5D6063;
+	color: #3c3c3c;
 	font-family: SanFrancisco-Light;
 }
 
@@ -251,6 +251,7 @@
 
 	overflow: hidden;
 	position: relative;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .topic .topic-icon {
