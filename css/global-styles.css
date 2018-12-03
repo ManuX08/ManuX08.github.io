@@ -45,7 +45,14 @@ body {
 	border-bottom: 1px solid #0070c9;
 }
 
-.more::after {
+.more-left::before {
+	content: "\2039";
+	display: inline-block;
+	padding-right: .3em;
+	top: 0;
+}
+
+.more-right::after {
 	content: "\203A";
 	display: inline-block;
 	padding-left: .3em;

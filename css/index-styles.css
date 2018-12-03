@@ -88,16 +88,14 @@
 }
 
 @media only screen and (max-width: 425px) {
-	.header {
-		padding-top: 84px;
-		padding-bottom: 84px;
-	}
 
 	.heading {
 		text-align: left;
 		max-width: 100%;
 		padding-left: 26px;
 		padding-right: 26px;
+		margin-top: 84px;
+		margin-bottom: 84px;
 	}
 
 	.heading h1 { /*Titolo*/
@@ -164,15 +162,12 @@
 }
 
 @media only screen and (min-width: 426px) {
-	.header {
-		padding-top: 112px;
-		padding-bottom: 112px;
-	}
-
 	.heading {
 		text-align: center;
 		max-width: 600px;
 		margin: auto;
+		margin-top: 112px;
+		margin-bottom: 112px;
 	}
 
 	.heading h1 { /*Titolo*/
@@ -301,6 +296,27 @@
 	}100%{
 		top: -10%;
 		left: -10%;
+	}
+}
+
+/*Styles for navigation links*/
+.navigation-links {
+	margin-top: 32px;
+	font-size: 17px;
+	font-family: SanFrancisco-Light;
+}
+
+@media only screen and (max-width: 425px) {
+	.navigation-links {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (min-width: 426px) {
+	.navigation-links {
+		margin-left: 24px;
+		margin-right: 24px;
 	}
 }
 
