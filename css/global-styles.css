@@ -73,6 +73,37 @@ body {
 }
 
 /*Header Menu styles*/
+@media only screen and (max-width: 425px) {
+	.menu {
+		border-top: 1px solid #EAEDF0;
+	}
+
+	.menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 13px 26px 13px 26px;
+		overflow: hidden;
+		font-family: SanFrancisco-Light;
+	}
+
+	.menu li {
+		padding: 8px 0px 8px 0px;
+		font-size: 17px;
+	}
+
+	.menu a {
+		text-decoration: none;
+	}
+
+	.menu li:not(.selected) a {
+		color: #616161;
+	}
+
+	.menu li.selected a {
+		color: #0070c9;
+	}
+}
+
 @media only screen and (min-width: 426px) {
 	.menu {
 		max-width: 600px;
@@ -93,36 +124,27 @@ body {
 	.menu li {
 		display: inline-block;
 		float: none;
-		padding-top: 12px;
-		padding-left: 14px;
-		padding-right: 14px;
 		font-size: 17px;
+	}
+
+	.menu li:not(.selected) {
+		padding: 12px 12px 12px 12px;
+	}
+
+	.menu li.selected {
+		padding: 12px 12px 10px 12px;
+		border-bottom: 2px solid #0070c9;
 	}
 
 	.menu a {
 		text-decoration: none;
-		color: #0070c9;
-	}
-
-	.menu a:visited {
-		color: #0070c9;
-	}
-
-	.menu li:not(.selected) {
-		padding-bottom: 12px;
 	}
 
 	.menu li:not(.selected) a {
 		color: #616161;
 	}
 
-	.menu li:not(.selected) a:visited {
-		color: #616161;
+	.menu li.selected a {
+		color: #0070c9;
 	}
-
-	.selected {
-		padding-bottom: 10px;
-		border-bottom: 2px solid #0070c9;
-	}
-
 }
