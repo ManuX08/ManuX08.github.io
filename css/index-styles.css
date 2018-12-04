@@ -286,6 +286,25 @@ h3 { /*Descrizione*/
 	}
 }
 
+/*Styles for contacts icon*/
+@media only screen and (max-width: 425px) {
+	#contact-icon {
+		margin-left: 24px;
+		margin-right: 24px;
+		margin-top: 24px;
+		margin-bottom: 28px;
+	}
+}
+
+@media only screen and (min-width: 426px) {
+	#contact-icon {
+		margin-left: 170px;
+		margin-right: 170px;
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+}
+
 /*Styles for navigation links*/
 .navigation-links {
 	margin-top: 32px;
