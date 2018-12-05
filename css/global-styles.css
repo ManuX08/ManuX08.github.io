@@ -144,6 +144,10 @@ body {
 		color: #616161;
 	}
 
+	.menu li:not(.selected) a:hover {
+		color: #0070c9;
+	}
+
 	.menu li.selected a {
 		color: #0070c9;
 	}
