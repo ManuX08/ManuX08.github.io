@@ -26,15 +26,25 @@
 	}
 
 	#contact-info img {
-		width: 58px;
+		width: 68px;
 		height: auto;
-		margin-left: 6px;
-		margin-right: 6px;
+		margin-left: 10px;
+		margin-right: 10px;
 		transition: .2s;
 	}
 	
 	#contact-info a:hover img {
 		transform: scale(1.1);
+	}
+
+	@media only screen and (max-width: 375px) {
+		#contact-info img {
+			width: 58px;
+			height: auto;
+			margin-left: 6px;
+			margin-right: 6px;
+			transition: .2s;
+		}
 	}
 }
 

@@ -62,50 +62,108 @@ body {
 .footer {
 	border-top: 1px solid #EAEDF0;
 	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .footer p {
-	margin-top: 12px;
-	margin-bottom: 12px;
 	color: #616161;
+	margin: 0;
 	font-size: 14px;
 	font-family: SanFrancisco-Light;
 }
 
 /*Header Menu styles*/
 @media only screen and (max-width: 425px) {
-	.menu {
-		border-top: 1px solid #EAEDF0;
+	.default-menu {
+		display: none;
+	}
+	
+	.footer {
+		margin-bottom: 70px;
 	}
 
-	.menu ul {
+	.mobile-menu {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		border-top: 1px solid #EAEDF0;
+		text-align: center;
+		background: #ffffff;
+	}
+	
+	.mobile-menu ul {
+		display: flex;
 		list-style-type: none;
-		margin: 0;
-		padding: 13px 26px 13px 26px;
+		margin-top: 8px;
+		margin-bottom: 8px;
+		padding: 0px 16px 0px 16px;
 		overflow: hidden;
 		font-family: SanFrancisco-Light;
 	}
 
-	.menu li {
-		padding: 8px 0px 8px 0px;
-		font-size: 17px;
+	.mobile-menu li {
+		flex: 1;
+		display: inline-block;
+		float: none;
+		font-size: 14px;
 	}
 
-	.menu a {
+	.mobile-menu a {
 		text-decoration: none;
 	}
 
-	.menu li:not(.selected) a {
+	.mobile-menu svg {
+		width: 32px;
+		height: 32px;
+		margin-bottom: 2px;
+	}
+
+	.mobile-menu li:not(.selected) a {
 		color: #616161;
 	}
 
-	.menu li.selected a {
+	.mobile-menu li:not(.selected) a:hover {
 		color: #0070c9;
+	}
+
+	.mobile-menu li:not(.selected) a:hover svg {
+		fill: #0070c9;
+	}
+
+	.mobile-menu li:not(.selected) svg {
+		fill: #616161;
+	}
+
+	.mobile-menu li.selected a {
+		color: #0070c9;
+	}
+
+	.mobile-menu li.selected svg {
+		fill: #0070c9;
+	}
+
+	@media only screen and (max-width: 375px) {
+		.footer {
+			margin-bottom: 66px;
+		}
+
+		.mobile-menu svg {
+			width: 28px;
+			height: 28px;
+			margin-bottom: 2px;
+		}
 	}
 }
 
 @media only screen and (min-width: 426px) {
-	.menu {
+	.mobile-menu {
+		display: none;
+	}
+
+	.default-menu {
+		display: block;
 		max-width: 600px;
 		margin-left: auto;
 		margin-right: auto;
@@ -113,7 +171,7 @@ body {
 		margin-top: -44px;
 	}
 
-	.menu ul {
+	.default-menu ul {
 		list-style-type: none;
 		margin-bottom: -1px;
 		padding: 0;
@@ -121,34 +179,36 @@ body {
 		font-family: SanFrancisco-Light;
 	}
 
-	.menu li {
+	.default-menu li {
 		display: inline-block;
 		float: none;
 		font-size: 17px;
 	}
 
-	.menu li:not(.selected) {
+	.default-menu li:not(.selected) {
 		padding: 12px 12px 12px 12px;
 	}
 
-	.menu li.selected {
+	.default-menu li.selected {
 		padding: 12px 12px 10px 12px;
 		border-bottom: 2px solid #0070c9;
 	}
 
-	.menu a {
+	.default-menu a {
 		text-decoration: none;
 	}
 
-	.menu li:not(.selected) a {
+	.default-menu li:not(.selected) a {
 		color: #616161;
 	}
 
-	.menu li:not(.selected) a:hover {
+	.default-menu li:not(.selected) a:hover {
 		color: #0070c9;
 	}
 
-	.menu li.selected a {
+	.default-menu li.selected a {
 		color: #0070c9;
 	}
 }
+
+/*Mobile devices menu styles*/
