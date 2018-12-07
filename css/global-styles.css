@@ -78,26 +78,18 @@ body {
 	.default-menu {
 		display: none;
 	}
-	
-	.footer {
-		margin-bottom: 70px;
-	}
 
 	.mobile-menu {
 		display: block;
-		position: fixed;
-		bottom: 0;
 		width: 100%;
-		border-top: 1px solid #EAEDF0;
 		text-align: center;
-		background: #ffffff;
+		margin-top: -51px;
 	}
 	
 	.mobile-menu ul {
 		display: flex;
 		list-style-type: none;
-		margin-top: 8px;
-		margin-bottom: 8px;
+		margin: 0 0 -1px 0;
 		padding: 0px 16px 0px 16px;
 		overflow: hidden;
 		font-family: SanFrancisco-Light;
@@ -108,6 +100,16 @@ body {
 		display: inline-block;
 		float: none;
 		font-size: 14px;
+		padding-top: 8px;
+	}
+
+	.mobile-menu li:not(.selected) {
+		padding-bottom: 8px;
+	}
+
+	.mobile-menu li.selected {
+		padding-bottom: 6px;
+		border-bottom: 2px solid #0070c9;
 	}
 
 	.mobile-menu a {
@@ -115,9 +117,8 @@ body {
 	}
 
 	.mobile-menu svg {
-		width: 32px;
-		height: 32px;
-		margin-bottom: 2px;
+		width: 30px;
+		height: 30px;
 	}
 
 	.mobile-menu li:not(.selected) a {
@@ -145,13 +146,13 @@ body {
 	}
 
 	@media only screen and (max-width: 375px) {
-		.footer {
-			margin-bottom: 66px;
+		.mobile-menu {
+			margin-top: -49px;
 		}
 
 		.mobile-menu svg {
-			width: 28px;
-			height: 28px;
+			width: 26px;
+			height: 26px;
 			margin-bottom: 2px;
 		}
 	}
