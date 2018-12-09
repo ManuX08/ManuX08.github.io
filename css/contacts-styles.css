@@ -4,13 +4,6 @@
 }
 
 @media only screen and (max-width: 425px) {
-	#contact-head {
-		margin-left: 24px;
-		margin-right: 24px;
-		margin-top: 24px;
-		margin-bottom: 28px;
-	}
-
 	#contact-info {
 		flex-direction: column;
 	}
@@ -49,13 +42,6 @@
 }
 
 @media only screen and (min-width: 426px) {
-	#contact-head {
-		margin-left: 170px;
-		margin-right: 170px;
-		margin-top: 24px;
-		margin-bottom: 24px;
-	}
-
 	#contact-info {
 		flex-direction: row;
 	}
