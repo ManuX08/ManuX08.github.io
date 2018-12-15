@@ -64,26 +64,23 @@
 	}
 }
 
-@media only screen and (max-width: 425px){
-	.head--icon-container {
-		height: 180px;
-		text-align: center;
-		padding: 6px 0 24px 0;
-	}
+#contacts-header {
+	text-align: center;
+	padding: 6px 0 24px 0;
+}
 
-	.head--icon-container img {
-		height: 100%;
+#contacts-header img {
+	height: 100%;
+}
+
+@media only screen and (max-width: 425px){
+	#contacts-header {
+		height: 180px;
 	}
 }
 
 @media only screen and (min-width: 426px) {
-	.head--icon-container {
+	#contacts-header {
 		height: 200px;
-		text-align: center;
-		padding: 6px 0 24px 0;
-	}
-
-	.head--icon-container img {
-		height: 100%;
 	}
 }
