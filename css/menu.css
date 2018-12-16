@@ -117,7 +117,7 @@
 
 	.default-menu {
 		display: block;
-		max-width: 600px;
+		max-width: 300px;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
@@ -126,6 +126,7 @@
 	}
 
 	.default-menu ul {
+		display: flex;
 		list-style-type: none;
 		margin-bottom: -1px;
 		padding: 0;
@@ -134,6 +135,7 @@
 	}
 
 	.default-menu li {
+		flex: 1;
 		display: inline-block;
 		float: none;
 		font-size: 17px;
