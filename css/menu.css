@@ -4,7 +4,7 @@
 	}
 
 	.footer {
-		margin-bottom: 72px;
+		margin-bottom:63px;
 	}
 
 	.mobile-menu {
@@ -31,15 +31,15 @@
 		display: inline-block;
 		float: none;
 		font-size: 14px;
-		padding-bottom: 8px;
+		padding-bottom: 6px;
 	}
 
 	.mobile-menu li:not(.selected) {
-		padding-top: 8px;
+		padding-top: 6px;
 	}
 
 	.mobile-menu li.selected {
-		padding-top: 6px;
+		padding-top: 4px;
 		border-top: 2px solid #0070c9;
 	}
 
@@ -48,8 +48,8 @@
 	}
 
 	.mobile-menu svg {
-		width: 34px;
-		height: 34px;
+		width: 32px;
+		height: 32px;
 	}
 
 	.mobile-menu li:not(.selected) a {
@@ -77,34 +77,34 @@
 	}
 
 	.mobile-menu p {
-		margin: -2px 0 3px 0;
+		margin: -4px 0 2px 0;
 		font-size: 15px;
 	}
 
 	@media only screen and (max-width: 375px) {
 		.footer {
-			margin-bottom: 66px;
+			margin-bottom: 58px;
 		}
 		
 		.mobile-menu li {
-			padding-bottom: 8px;
+			padding-bottom: 6px;
 		}
 	
 		.mobile-menu li:not(.selected) {
-			padding-top: 8px;
+			padding-top: 6px;
 		}
 	
 		.mobile-menu li.selected {
-			padding-top: 6px;
+			padding-top: 4px;
 			border-top: 2px solid #0070c9;
 		}
 		.mobile-menu svg {
-			width: 30px;
-			height: 30px;
+			width: 28px;
+			height: 28px;
 		}
 
 		.mobile-menu p {
-			margin: -2px 0 3px 0;
+			margin: -3px 0 2px 0;
 			font-size: 14px;
 		}
 	}
