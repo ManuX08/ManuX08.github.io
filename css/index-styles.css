@@ -1,23 +1,6 @@
 /*Styles for subject selection*/
 #subject-container {
-	margin-top: 28px;
-	margin-left: 24px;
-	margin-right: 24px;
 	margin-bottom: -10px;
-}
-
-@media only screen and (max-width: 425px) {
-	#subject-container {
-		margin-top: 22px;
-	}
-}
-
-@media only screen and (max-width: 320px) {
-	#subject-container {
-		margin-top: 16px;
-		margin-left: 0px;
-		margin-right: 0px;
-	}	
 }
 
 .topic {
@@ -27,7 +10,7 @@
 	margin: 10px;
 
 	background-color: #EEEEEE;
-	border-radius: 30%;
+	border-radius: 35%;
 	box-shadow: 0 5px 13px -5px rgba(0, 0, 0, 0.4);
 
 	overflow: hidden;
@@ -62,6 +45,47 @@
 	animation: topic-animation 0.7s 1;
 	top: -10%;
 	left: -10%;
+}
+
+@media only screen and (min-width: 426px) {
+	#subject-container {
+		margin-top: 28px;
+		margin-left: 24px;
+		margin-right: 24px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#subject-container {
+		margin-top: 22px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	@media only screen and (min-width: 320px) and (max-width: 375px) {
+		.topic {
+			width: 80px;
+			height: 80px;
+		}
+		
+		.topic .topic-icon {
+			height: 100%;
+			width: 65px;
+			fill: #74b5f7;
+			transition: 0.2s linear;
+		}
+	
+		.topic:hover .topic-icon {
+			transform: scale(1.1);
+			fill: #ffffff;
+		}
+	}
+
+	@media only screen and (max-width: 320px) {
+		#subject-container {
+			margin-top: 16px;
+		}	
+	}
 }
 
 @keyframes topic-animation {
