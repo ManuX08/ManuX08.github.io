@@ -56,6 +56,14 @@
 		color: #616161;
 	}
 
+	.mobile-menu li:not(.selected) a:hover {
+		color: #0070c9;
+	}
+
+	.mobile-menu li:not(.selected) a:hover svg {
+		fill: #0070c9;
+	}
+
 	.mobile-menu li:not(.selected) svg {
 		fill: #616161;
 	}
@@ -144,7 +152,6 @@
 
 	.default-menu a {
 		text-decoration: none;
-		transition: .3s
 	}
 
 	.default-menu li:not(.selected) a {
