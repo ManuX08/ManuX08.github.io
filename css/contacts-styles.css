@@ -44,16 +44,16 @@
 
 @media only screen and (max-width: 425px) {
 	#media-container {
-		margin-top: 24px;
+		margin-top: 14px;
 	}
 
     #media-container img {
-		margin: 0 30px;
+		margin: 0 32px;
 	}
 	
 	@media only screen and (max-width: 375px) {
 		#media-container {
-			margin-top: 32px;
+			margin-top: 16px;
 		}
 
 		#media-container img {
@@ -93,6 +93,7 @@
 	}
 
 	#media-container {
-		margin: 0 -16px;
+		margin-left: -16px;
+		margin-right: -16px;
 	}
 }
