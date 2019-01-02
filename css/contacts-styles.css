@@ -35,7 +35,6 @@
 }
 
 #media-container img {
-    margin: 0 32px;
     transition: .2s;
 }
 
@@ -44,14 +43,40 @@
 }
 
 @media only screen and (max-width: 425px) {
+	#media-container {
+		margin-top: 24px;
+	}
+
     #media-container img {
-        height: 48px;
-    }
+		margin: 0 28px;
+	}
+	
+	@media only screen and (max-width: 375px) {
+		#media-container {
+			margin-top: 32px;
+		}
+
+		#media-container img {
+			margin: 0 24px;
+		}
+	}
+
+	@media only screen and (max-width: 360px) {
+		#media-container img {
+			margin: 0 22px;
+		}
+	}
+
+	@media only screen and (max-width: 320px) {
+		#media-container img {
+			margin: 0 18px;
+		}
+	}
 }
 
 @media only screen and (min-width: 426px) {
     #media-container img {
-        height: 50px;
+        margin: 0 36px;
     }
 }
 
@@ -65,5 +90,9 @@
 		margin-top: -36px;
 		width: 64px;
 		height: 64px;
+	}
+
+	#media-container {
+		margin: 0 -16px;
 	}
 }
