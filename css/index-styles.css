@@ -1,9 +1,35 @@
 /*Styles for subject selection*/
 #subject-container {
 	margin-top: 28px;
-	margin-left: 24px;
-	margin-right: 24px;
 	margin-bottom: -10px;
+}
+
+.topic {
+	display: inline-block;
+	margin: 10px;
+
+	background-color: #EEEEEE;
+	filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+
+	overflow: hidden;
+	position: relative;
+	-webkit-tap-highlight-color: transparent;
+}
+
+@media only screen and (max-width: 375px) {
+	.topic {
+		width: 80px;
+		height: 80px;
+		border-radius: 30%;
+	}
+
+	@media only screen and (max-width: 320px) {
+		#subject-container {
+			margin-top: 16px;
+			margin-left: 0px;
+			margin-right: 0px;
+		}	
+	}
 }
 
 @media only screen and (max-width: 425px) {
@@ -12,27 +38,19 @@
 	}
 }
 
-@media only screen and (max-width: 320px) {
-	#subject-container {
-		margin-top: 16px;
-		margin-left: 0px;
-		margin-right: 0px;
-	}	
+@media only screen and (min-width: 376px) {
+	.topic {
+		width: 90px;
+		height: 90px;
+		border-radius: 30%;
+	}
 }
 
-.topic {
-	display: inline-block;
-	width: 90px;
-	height: 90px;
-	margin: 10px;
-
-	background-color: #EEEEEE;
-	border-radius: 30%;
-	box-shadow: 0 5px 13px -5px rgba(0, 0, 0, 0.4);
-
-	overflow: hidden;
-	position: relative;
-	-webkit-tap-highlight-color: transparent;
+@media only screen and (min-width: 426px) {
+	#subject-container {
+		margin-left: 24px;
+		margin-right: 24px;
+	}
 }
 
 .topic .topic-icon {
