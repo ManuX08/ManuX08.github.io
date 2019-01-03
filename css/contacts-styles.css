@@ -42,45 +42,19 @@
     transform: scale(1.1);
 }
 
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+	#media-container img {
+		margin: 0 28%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	#media-container img {
+		margin: 0 30%;
+	}
+}
+
 @media only screen and (max-width: 425px) {
-	#media-container {
-		margin-top: 14px;
-	}
-
-    #media-container img {
-		margin: 0 32px;
-	}
-	
-	@media only screen and (max-width: 375px) {
-		#media-container {
-			margin-top: 16px;
-		}
-
-		#media-container img {
-			margin: 0 24px;
-		}
-	}
-
-	@media only screen and (max-width: 360px) {
-		#media-container img {
-			margin: 0 22px;
-		}
-	}
-
-	@media only screen and (max-width: 320px) {
-		#media-container img {
-			margin: 0 18px;
-		}
-	}
-}
-
-@media only screen and (min-width: 426px) {
-    #media-container img {
-        margin: 0 36px;
-    }
-}
-
-@media only screen and (max-width: 767px){
 	.contact-card {
 		margin: 50px 8px 0 8px;
 		padding: 0 16px 16px 16px;
@@ -95,5 +69,43 @@
 	#media-container {
 		margin-left: -16px;
 		margin-right: -16px;
+	}
+
+	@media only screen and (max-width: 320px) {
+		#media-container img {
+			margin: 0 18px;
+		}
+	}
+	
+	@media only screen and (max-width: 321px) and (max-width: 360px) {
+		#media-container img {
+			margin: 0 22px;
+		}
+	}
+	
+	@media only screen and (min-width: 361px) and (max-width: 375px) {
+		#media-container {
+			margin-top: 16px;
+		}
+	
+		#media-container img {
+			margin: 0 24px;
+		}
+	}
+	
+	@media only screen and (min-width: 376px) and (max-width: 425px) {
+		#media-container {
+			margin-top: 14px;
+		}
+	
+		#media-container img {
+			margin: 0 32px;
+		}
+	}
+	
+	@media only screen and (min-width: 426px) {
+		#media-container img {
+			margin: 0 36px;
+		}
 	}
 }
