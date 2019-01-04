@@ -9,48 +9,11 @@
 	margin: 10px;
 
 	background-color: #EEEEEE;
-	filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
 
 	overflow: hidden;
 	position: relative;
 	-webkit-tap-highlight-color: transparent;
-}
-
-@media only screen and (max-width: 375px) {
-	.topic {
-		width: 80px;
-		height: 80px;
-		border-radius: 30%;
-	}
-
-	@media only screen and (max-width: 320px) {
-		#subject-container {
-			margin-top: 16px;
-			margin-left: 0px;
-			margin-right: 0px;
-		}	
-	}
-}
-
-@media only screen and (max-width: 425px) {
-	#subject-container {
-		margin-top: 22px;
-	}
-}
-
-@media only screen and (min-width: 376px) {
-	.topic {
-		width: 90px;
-		height: 90px;
-		border-radius: 30%;
-	}
-}
-
-@media only screen and (min-width: 426px) {
-	#subject-container {
-		margin-left: 24px;
-		margin-right: 24px;
-	}
 }
 
 .topic .topic-icon {
@@ -80,6 +43,43 @@
 	animation: topic-animation 0.7s 1;
 	top: -10%;
 	left: -10%;
+}
+
+@media only screen and (max-width: 375px) {
+	.topic {
+		width: 80px;
+		height: 80px;
+		border-radius: 35%;
+	}
+
+	@media only screen and (max-width: 320px) {
+		#subject-container {
+			margin-top: 16px;
+			margin-left: 0px;
+			margin-right: 0px;
+		}	
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#subject-container {
+		margin-top: 22px;
+	}
+}
+
+@media only screen and (min-width: 376px) {
+	.topic {
+		width: 85px;
+		height: 85px;
+		border-radius: 35%;
+	}
+}
+
+@media only screen and (min-width: 426px) {
+	#subject-container {
+		margin-left: 24px;
+		margin-right: 24px;
+	}
 }
 
 @keyframes topic-animation {
